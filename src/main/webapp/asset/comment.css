@@ -1,0 +1,107 @@
+body {
+    margin: 10px auto;
+    padding: 2px;
+    width: 800px;
+    background-color: #FAFAFA;
+    color: #54728C;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 62.5%;
+    line-height: 2em;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 4px;
+}
+
+.commentItem {
+    position: relative;
+    margin: 0.2em;
+    padding-left: 1.25em;
+    border-radius: 6px;
+}
+.commentItem:nth-child(3n+1) {
+    background-color: #F5F5F5;
+}
+.commentItem:nth-child(3n+2) {
+    background-color: #FFFFFF;
+    border: #F5F5F5 1px solid;
+}
+.commentItem:nth-child(3n) {
+    background-color: #54728C;
+    color: #F5F5F5;
+}
+.commentItem:nth-child(3n) blockquote:before {
+    color: #F5F5F5;
+}
+.commentItem h1 {
+    font-size: 2em;
+}
+.commentItem blockquote {
+    font-size: 1.25em;
+}
+.commentItem blockquote:before {
+    display: block;
+    position: absolute;
+    left: 0.25em;
+    width: 1em;
+    content: open-quote;
+    font: italic 500% Cochin,Georgia,"Times New Roman", serif;
+    color: #54728C;
+    z-index: 1000;
+}
+
+
+.commentForm {
+    margin-top: 20px;
+}
+.commentForm input, .commentForm textarea {
+    display: block;
+    margin: 4px;
+    padding: 4px;
+    border: #54728C 1px solid;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+}
+.commentForm input[type="text"] {
+    width: 200px;
+}
+.commentForm input[type="text"]:required:invalid {
+    border-color: #FF5252;
+}
+.commentForm textarea {
+    width: 782px;
+    height: 80px;
+}
+.commentForm .comment-title {
+    width: 482px !important;
+}
+.btn {
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    padding: 4px;
+    border: none;
+    background-color: #54728C;
+    color: #F5F5F5;
+    border: none;
+    text-align: center;
+}
+.btn-envoyer {
+    left: 710px;
+    width: 80px;
+}
+.btn-plus {
+    width: 100px;
+}
